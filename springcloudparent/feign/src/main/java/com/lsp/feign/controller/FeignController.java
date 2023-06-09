@@ -28,4 +28,14 @@ public class FeignController {
         return null;
     }
 
+
+    @RequestMapping("/feignPostTest")
+    public Object feignPostTest(){
+        Map map=new HashMap();
+        map.put("name","avs");
+        map.put("sex","男");
+        feignInterface.feignPostTest(map);
+        return null;
+    }
+
 }
