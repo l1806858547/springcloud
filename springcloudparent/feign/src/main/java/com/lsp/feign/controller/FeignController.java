@@ -31,6 +31,7 @@ public class FeignController {
 
     @RequestMapping("/feignPostTest")
     public Object feignPostTest(){
+        System.out.println(456);
         Map map=new HashMap();
         map.put("name","avs");
         map.put("sex","男");
